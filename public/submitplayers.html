@@ -1,0 +1,32 @@
+<!--index.html already has a container around this whole html file-->
+    <!--index.html already has id="load_main" div so no need to include it -->
+    <div ng-controller="avgCtrl">
+        <div class="row">
+            <h1 align="center" class='spacious-title'>Submit Player!</h1>
+            <form action="submitplayer" method="post" target="print_popup"
+            onsubmit="window.open('about:blank','print_popup','top=300, left=500,width=300,height=300');">
+                <div class="col-md-2 col-md-offset-1">
+                    <input type="text" name="playerName" placeholder="Name" />
+                </div>
+                <div class="col-md-2">
+                    <input type="text" name="game1" placeholder="Game 1 Score" ng-model="game1"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" name="game2" placeholder="Game 2 Score" ng-model="game2"/>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" name="game3" placeholder="Game 3 Score" ng-model="game3"/>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" id="playersubmit">Submit!</button>
+                </div>
+            </form>
+        </div><!--row-->
+        <!--Angular controllers not working, acting as html element instead of angular even though controllers.js is reading in fine-->
+        <!-- <div class="row">
+            <div class="centered">
+                <p> Average: {{average}} </p>
+            </div>
+        </div><!--row-->
+        
+    </div><!--ng-controller-->

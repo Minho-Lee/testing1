@@ -1,0 +1,210 @@
+/*///////////////
+/ index.html    /
+///////////////*/
+
+body {
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../img/bowling_background.png');
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+body:after{
+    
+}
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%)
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.col-centered {
+    text-align: center;
+}
+
+.spacious-title {
+    padding: 40px;
+}
+
+/*///////////////
+/  home.html    /
+///////////////*/
+
+#bowling-info{
+    width:60%;
+    margin: 0 auto;
+}
+
+/*///////////////
+/  teams.html   /
+///////////////*/
+
+/*///////////////
+/ players.html  /
+///////////////*/
+
+#playerNotFound {
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 20px;
+}
+/*responsive table css */
+.responstable {
+  margin: 1em 0;
+  width: 80%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+.responstable tr {
+  border: 1px solid #D9E4E6;
+}
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.responstable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+  width: 100px;
+}
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+.responstable th:nth-child(2) span {
+  display: none;
+}
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.responstable th, .responstable td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+
+/*#showScore
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 45px;
+    width: 80%;
+    text-align: left;
+    border-collapse: collapse;
+}
+#showScore thead th.rounded-top-left
+{
+    background: #b9c9fe url('../img/left.png') left -1px no-repeat;
+}
+#showScore thead th.rounded-top-right
+{
+    background: #b9c9fe url('../img/right.png') right -1px no-repeat;
+}
+#showScore th
+{
+    padding: 8px;
+    font-weight: normal;
+    font-size: 13px;
+    color: #039;
+    background: #b9c9fe;
+}
+#showScore td
+{
+    padding: 8px;
+    background: #e8edff;
+    border-top: 1px solid #fff;
+    color: #669;
+}
+#showScore tfoot td.rounded-foot-left
+{
+    background: #e8edff url('../img/botleft.png') left bottom no-repeat;
+}
+#showScore tfoot td.rounded-foot-right
+{
+    background: #e8edff url('../img/botright.png') right bottom no-repeat;
+}
+#showScore tbody tr:hover td
+{
+    background: #d0dafd;
+}*/
+
+/*///////////////
+/ contact.html  /
+///////////////*/
+
+#contactInfo input, textarea{
+    width: 300px;
+}
+
+#contactInfo label {
+    font-size: 20px;
+    padding: 5px 0px;
+    font-weight: normal;
+}
+
+#contactInfo .btn-block {
+    width: 300px;
+}
+
